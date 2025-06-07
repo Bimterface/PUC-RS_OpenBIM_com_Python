@@ -7,6 +7,50 @@ O objetivo é capacitar profissionais da construção civil a utilizar a linguag
 
 ---
 
+## Instalação VS Code
+
+## 🪟 Windows
+
+1. Acesse o site oficial:
+   [https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+2. Clique em **Download for Windows**.
+
+3. Após o download, execute o instalador (`VSCodeUserSetup-x64-<versão>.exe`).
+
+4. Na instalação:
+
+   - Aceite os termos de licença.
+   - Escolha o diretório de instalação (ou deixe o padrão).
+   - Marque as seguintes opções recomendadas:
+     - `Adicionar ao PATH`
+     - `Registrar o código no menu de contexto do Windows Explorer`
+     - `Abrir com Code`
+   - Clique em **Instalar**.
+
+5. Após a instalação, clique em **Concluir** para abrir o VSCode.
+
+---
+
+## 🍎 macOS
+
+1. Acesse o site oficial:
+   [https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+2. Clique em **Download for Mac**.
+
+3. Após o download, abra o arquivo `.zip` e arraste o **Visual Studio Code** para a **pasta Aplicativos**.
+
+4. Para permitir abertura por segurança do sistema:
+
+   - Vá em **Preferências do Sistema > Segurança e Privacidade > Geral**.
+   - Clique em **Permitir Abrir Mesmo Assim** se houver aviso.
+
+5. (Opcional) Ativar o comando `code` no terminal:
+   - Abra o VSCode.
+   - Pressione `Cmd + Shift + P` e digite: `Shell Command: Install 'code' command in PATH`.
+   - Pressione Enter.
+
 ## 🐍 Instalação do Python
 
 ### Windows
@@ -49,13 +93,13 @@ Usar ambientes virtuais ajuda a manter as dependências organizadas e específic
    **Windows:**
 
    ```bash
-   python -m venv venv
+   python -m venv .venv
    ```
 
    **macOS/Linux:**
 
    ```bash
-   python3 -m venv venv
+   python3 -m venv .venv
    ```
 
 3. Ative o ambiente:
@@ -63,13 +107,13 @@ Usar ambientes virtuais ajuda a manter as dependências organizadas e específic
    **Windows:**
 
    ```bash
-   venv\Scripts\activate
+   .venv\Scripts\activate
    ```
 
    **macOS/Linux:**
 
    ```bash
-   source venv/bin/activate
+   source .venv/bin/activate
    ```
 
 4. Para sair do ambiente virtual:
@@ -93,11 +137,11 @@ Nas próximas aulas e conteúdos deste repositório, você aprenderá a:
 
 ```
 PUC-RS_OpenBIM_com_Python/
-├── exemplos/
-├── dados/
-├── notebooks/
+├── 01 - Python/
+├── 02 - Exemplos IFC/
+├── App
+├── .gitignore
 ├── README.md
-└── requirements.txt
 ```
 
 ---
